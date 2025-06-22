@@ -33,9 +33,6 @@ The dashboard gives a clean, visual summary of:
 - Quantity and Value Segmentation
 - Dynamic slicers using dropdowns and filters
 
-🖼️ Screenshot:  
-![Dashboard Screenshot](Dashboard.png)
-
 ---
 
 ## 📌 Key Features
