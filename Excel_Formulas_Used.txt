@@ -1,21 +1,39 @@
 =IF('Main Data(Cleaned)'!J2:J1001 > 1000, "High Value", "Low Value")
+
 =IFS('Main Data(Cleaned)'!L1:L1001 < 5, "Low", 'Main Data(Cleaned)'!L1:L1001 <= 15, "Medium", 'Main Data(Cleaned)'!L1:L1001 > 15, "High")
+
 =IFS('Main Data(Cleaned)'!F2:F1001 < 50, "Cheap", 'Main Data(Cleaned)'!F2:F1001 <= 300, "Moderate", 'Main Data(Cleaned)'!F2:F1001 > 301, "Expensive")
+
 =IF(AND('Main Data(Cleaned)'!E1 > 7, 'Main Data(Cleaned)'!I1 = "Yes"), "High Qty & Returned", "No")
+
 =VLOOKUP(I2, 'Main Data(Cleaned)'!D2:N1001, MATCH(Formulas!J2, 'Main Data(Cleaned)'!D1:N1, 0), 0)
+
 =SUMIF('Main Data(Cleaned)'!M1:M1001, Formulas!I34, 'Main Data(Cleaned)'!J1:J1001)
+
 =COUNTIFS('Main Data(Cleaned)'!I1:I1001, "Yes", 'Main Data(Cleaned)'!C1:C1001, "North")
+
 =AVERAGEIFS('Main Data(Cleaned)'!F1:F1001, 'Main Data(Cleaned)'!K1:K1001, "Technology", 'Main Data(Cleaned)'!I1:I1001, "No")
+
 =MAXIFS('Main Data(Cleaned)'!J1:J1001, 'Main Data(Cleaned)'!K1:K1001, "Office Supplies")
+
 =MINIFS('Main Data(Cleaned)'!E1:E1001, 'Main Data(Cleaned)'!K1:K1001, "Furniture")
+
 =COUNTIF('Main Data(Cleaned)'!I2:I1001, "Yes")
+
 =DATE(YEAR('Main Data(Cleaned)'!H2), MONTH('Main Data(Cleaned)'!H2), DAY('Main Data(Cleaned)'!H2))
+
 =TAKE(SORT(FILTER('Main Data(Cleaned)'!A2:N1001, 'Main Data(Cleaned)'!M2:M1001 = "USA"), 10, -1), 5)
+
 =YEAR('Main Data(Cleaned)'!H2)
+
 =SUM('Main Data(Cleaned)'!J2:J1048576)
+
 =COUNTA('Main Data(Cleaned)'!A2:A1001)
+
 =COUNTIF('Main Data(Cleaned)'!I2:I1001, "Yes") / COUNTA('Main Data(Cleaned)'!I2:I1001)
+
 =TAKE(FILTER('Main Data(Cleaned)'!A2:P1001, 'Main Data(Cleaned)'!E2:E1001 = MAX('Main Data(Cleaned)'!E2:E1001)), 10)
+
 =DATE(YEAR('Main Data(Cleaned)'!H2),MONTH('Main Data(Cleaned)'!H2),DAY('Main Data(Cleaned)'!H2))
 
 **Data Validation / Dropdowns used**
